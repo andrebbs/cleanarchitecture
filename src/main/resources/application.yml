@@ -1,0 +1,17 @@
+hibernate:
+    dialect: org.hibernate.dialect.HSQLDialect
+server:
+    port: 8089
+    servlet:
+        context-path: /cleanarchitecture/v1
+spring:
+    datasource:
+        driver-class-name: org.postgresql.Driver
+        password: jedi
+        url: jdbc:postgresql://localhost:5432/postgres
+        username: postgres
+    jpa:
+        format-sql: true
+        hibernate:
+            ddl-auto: none
+        show-sql: true
